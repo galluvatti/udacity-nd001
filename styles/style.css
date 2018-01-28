@@ -33,6 +33,24 @@ body {
   color: #2d3c49;
 }
 
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_image {
+  margin: 5%;
+  width: 100%;
+}
+
+.image{
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  /* box-shadow: 2px 2px 2px #d3d3d3; */
+}
+
 @media screen and (max-width: 500px) {
   .header {
     flex-direction: column;
