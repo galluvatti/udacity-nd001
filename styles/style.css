@@ -4,6 +4,37 @@ body {
   font-size: 1.5em;
 }
 
+h1,h3 {
+  width: 100%;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #2d3c49;
+  text-transform: uppercase;
+}
+
+p {
+  width: 100%;
+  font-size: 0.5em;
+}
+
+figcaption {
+  width: 100%;
+  font-weight: 300;
+  font-family: sans-serif;
+  color: #2d3c49;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+
+.caption_link {
+  width: 100%;
+  font-weight: 200;
+  font-size: 0.5em;
+  font-family: sans-serif;
+  color: #2d3c49;
+  text-align: center;
+}
+
 .container {
   width: 100%;
 }
@@ -27,15 +58,8 @@ body {
   flex-wrap: wrap;
 }
 
-.header_text {
-  width: 100%;
-  font-weight: 600;
-  font-family: sans-serif;
-  color: #2d3c49;
-  text-transform: uppercase;
-}
-
 .main {
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,22 +67,12 @@ body {
 }
 
 .main_image {
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
   width: 100%;
 }
 
 .image{
   width: 100%;
   border: 1px solid #d3d3d3;
-  /* box-shadow: 2px 2px 2px #d3d3d3; */
-}
-
-.works {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 .works_header_title {
@@ -66,9 +80,28 @@ body {
   text-align: left;
   color: #7d97ad;
   font-weight: 300;
+  margin-left: 5%;
 }
 
-@media screen and (max-width: 500px) {
+.works {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: -2% -2% -2% -2%;
+}
+
+.project_description {
+  width: 33%;
+}
+
+.project_image {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  box-shadow: 2px 2px 2px #d3d3d3;
+}
+
+@media screen and (max-width: 840px) {
   .header {
     flex-direction: column;
   }
@@ -77,12 +110,30 @@ body {
     width: 100%;
   }
 
-  .header_title {
+  .header_title, .works_header_title {
     width: 100%;
     text-align: center;
+    margin-left: 0%;
+  }
+
+  .works {
+    flex-wrap: wrap;
+    justify-content:  center;
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .project_description {
+
   }
 
   body {
     font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 0.5em;
   }
 }
